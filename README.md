@@ -1,3 +1,8 @@
+![Build Status](https://img.shields.io/github/workflow/status/Arison99/AutoFore/.github/workflows)
+![Commits](https://img.shields.io/github/commit-activity/m/Arison99/AutoFore)
+![Language](https://img.shields.io/github/languages/top/Arison99/AutoFore)
+![Stars](https://img.shields.io/github/stars/Arison99/AutoFore)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
