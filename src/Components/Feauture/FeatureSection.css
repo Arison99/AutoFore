@@ -1,0 +1,227 @@
+/* Container styling */
+.container2 {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: black; /* Match the image background */
+    color: white;
+}
+
+.container2 .title {
+    font-size: 2rem;
+    background-color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+    color: rgb(247, 187, 77);
+}
+
+.text {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+    word-break: break-all;
+    margin-left: 50px;
+}
+
+/* Section title styling */
+.section-title {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #f7b42c; /* Highlighted yellow */
+}
+
+.para {
+    font-size: 1.4rem;
+}
+
+/* Card styles */
+.card {
+    font-size: 1.3rem;
+    background-color: #ffffff; /* White background for cards */
+    border: none;
+    margin-left: 150px;
+    border-radius: 12px;
+    color: rgb(114, 114, 114);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 700px;
+    width: 1540px;
+}
+
+.card1 {
+    background-color: #ffffff; /* White background for cards */
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    color: rgb(114, 114, 114);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 620px;
+    margin-left: 150px;
+    width: 660px;
+}
+
+.card2 {
+    background-color: #ffffff; /* White background for cards */
+    border: none;
+    margin-left: 250px;
+    font-size: 1.2rem;  
+    border-radius: 12px;
+    color: rgb(114, 114, 114);
+    padding: 20px;
+    height: 620px;
+    width: 800px;
+}
+
+.card3 {
+    background-color: #ffffff; /* White background for cards */
+    border: none;
+    margin-left: 390px;
+    font-size: 1.2rem;  
+    border-radius: 12px;
+    color: rgb(114, 114, 114);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 615px;
+    width: 660px;
+}
+
+.card4 {
+    background-color: #ffffff; /* White background for cards */
+    border: none;
+    margin-left: 150px;
+    font-size: 1.2rem;  
+    border-radius: 12px;
+    color: rgb(114, 114, 114);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 615px;
+    width: 800px;
+}
+
+/* Images within cards */
+.img-fluid {
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-color: white;
+    border-style: inherit;
+    overflow-block: hidden;
+}
+
+/* Button styling */
+.container2 .btn-explore {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: 100;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    right: -490px;
+    margin-top: auto;
+    height: auto;
+    width: auto;
+    position: relative;
+    background-color: black;
+}
+
+.btn-explore:hover {
+    background-color: #f7b42c;
+    color: black;
+}
+
+/* Responsive spacing */
+.row.g-4 {
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+    .text {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        font-size: 2.5rem;
+        margin-left: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-explore {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-explore {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,156 @@
+.navbar {
+    background-color: white;
+    overflow: visible; /* Allow dropdown to appear outside the navbar */
+    position: relative; /* Ensure z-index context */
+    z-index: 10; /* Ensure navbar stacks correctly */
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+}
+
+.navbar-list > li {
+    padding: 14px 20px;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    position: relative; /* Required for dropdown positioning */
+    border-radius: 30px;
+}
+
+.navbar-list > li:hover {
+    background-color: #2474eb;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute; /* Critical for dropdown positioning */
+    background-color: #ffffff;
+    min-width: 400px; /* Adjust width as needed */
+    z-index: 1050; /* Bootstrap default for dropdowns */
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    top: 100%; /* Position below the parent */
+    right: 0; /* Align with the parent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visibility */
+    
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+}
+
+.dropdown > li {
+    padding: 12px 16px;
+    color: rgb(41, 41, 41);
+    border-radius: 10px;
+}
+
+.dropdown > li:hover {
+    background-color: #2474eb;
+    color: white;
+}
+
+.navbar-list > li:hover > ul.dropdown {
+    display: grid;
+}
+
+.navbar-list > li > ul.dropdown > li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.navbar-list > li > ul.dropdown > li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-arrow {
+    float: right;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-list > li {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .dropdown {
+        min-width: 100%;
+        position: static;
+        box-shadow: none;
+        display: none;
+    }
+
+    .navbar-list > li:hover .dropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 150px;
+        height: 75px;
+    }
+
+    .navbar-list {
+        font-size: 1rem;
+    }
+
+    .navbar-list > li {
+        padding: 10px 15px;
+    }
+
+    .dropdown {
+        padding: 5px;
+    }
+
+    .dropdown > li {
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        width: 120px;
+        height: 60px;
+    }
+
+    .navbar-list {
+        font-size: 0.9rem;
+    }
+
+    .navbar-list > li {
+        padding: 8px 10px;
+    }
+
+    .dropdown {
+        padding: 5px;
+    }
+
+    .dropdown > li {
+        padding: 8px 10px;
+    }
+}
