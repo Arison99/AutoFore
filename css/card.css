@@ -1,0 +1,99 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0; /* Remove any margin */
+    padding: 20px;
+    max-width: 118rem; /* Set width to 100% of the viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Ensure the container is the reference for sticky positioning */
+  }
+  
+  .spotlight-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    color: #2951f3;
+    position: sticky;
+    top: 20px; /* Adjust as needed */
+    background-color: #f9f9f9; /* Match the container background */
+    z-index: 10; /* Ensure it stays above other content */
+    padding: 10px; /* Add padding for better visibility */
+  }
+  
+  .spotlight-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: clip;
+    line-clamp: 3;
+    position: sticky;
+    top: 60px; /* Adjust as needed */
+    background-color: #f9f9f9; /* Match the container background */
+    z-index: 10; /* Ensure it stays above other content */
+    padding: 10px; /* Add padding for better visibility */
+    writing-mode: horizontal-tb; /* Rotate the text vertically */
+    text-orientation: upright; /* Keep letters upright */
+    word-break: break-word; /* Allow words to break across lines */
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 450px;;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-card h5 {
+    font-size: 1.95rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+  
+  .feature-card p {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #767676;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+  
+  .feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  /* Two-column layout for the cards */
+  .row-gy-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  @media (max-width: 768px) {
+    .row-gy-4 {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+  }
