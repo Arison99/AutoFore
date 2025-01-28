@@ -51,7 +51,6 @@
     top: 100%; /* Position below the parent */
     right: 0; /* Align with the parent */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visibility */
-    
     grid-template-columns: 1fr 1fr; /* Two columns */
     gap: 10px;
 }
@@ -85,6 +84,13 @@
     float: right;
 }
 
+.navbar .navbar-toggler {
+     color: #2474eb;
+}
+
+.ion-ios-menu {
+    color: #333;
+}
 /* Responsive styles */
 @media (max-width: 992px) {
     .navbar-list {
@@ -152,5 +158,80 @@
 
     .dropdown > li {
         padding: 8px 10px;
+    }
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    color: #333;
+    top: 10px;
+    right: 20px;
+    z-index: 20; /* Ensure it's above the navbar content */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.change .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block; /* Show on smaller screens */
+    }
+
+    .navbar-list {
+        display: none; /* Hide the desktop menu */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 15; /* Ensure it's above other content */
+    }
+
+    .navbar-list.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .navbar-list > li {
+        width: 100%;
+        text-align: center; /* Center the menu items */
+        padding: 15px 0; /* Adjust padding for better touch experience */
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown {
+        position: relative; /* Reset dropdown positioning */
+        box-shadow: none;
+        display: none;
+        grid-template-columns: 1fr; /* Single column on mobile */
+        min-width: 100%;
+    }
+    .navbar-list > li:hover .dropdown {
+        display: block; /* Show dropdown on hover */
+    }
+    .dropdown > li {
+        padding: 10px 0; /* Adjust padding for mobile */
     }
 }

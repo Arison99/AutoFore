@@ -24,6 +24,9 @@
   <body>
 	<nav class="navbar">
 		<img src="images/logo.jpeg" alt="Logo" class="navbar-logo">
+		<button class="navbar-toggler" type="button" onclick="toggleMenu(this)">
+			<i class="ion-ios-menu"></i>
+		</button>
 		<ul class="navbar-list">
 		  <li>
 			Features
@@ -214,6 +217,13 @@
 		  <li>Sign In</li>
 		</ul>
 	  </nav>
+	  <script>
+        function toggleMenu(x) {
+            x.classList.toggle("change");
+            const navbarList = document.querySelector('.navbar-list');
+            navbarList.classList.toggle('active');
+        }
+    </script>
     <!-- END nav -->
     <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
