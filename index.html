@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/icon.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/ionicons@7.1.0/css/ionicons.min.css" rel="stylesheet">  
  
     <link rel="stylesheet" href="css/animate.css">
     
@@ -25,7 +26,7 @@
 	<nav class="navbar">
 		<img src="images/logo.jpeg" alt="Logo" class="navbar-logo">
 		<button class="navbar-toggler" type="button" onclick="toggleMenu(this)">
-			<i class="ion-ios-menu"></i>
+			<ion-icon name="menu" style="color: black;"></ion-icon>
 		</button>
 		<ul class="navbar-list">
 		  <li>
@@ -218,12 +219,22 @@
 		</ul>
 	  </nav>
 	  <script>
-        function toggleMenu(x) {
-            x.classList.toggle("change");
-            const navbarList = document.querySelector('.navbar-list');
-            navbarList.classList.toggle('active');
-        }
-    </script>
+		function toggleMenu(x) {
+			x.classList.toggle("change");
+			const navbarList = document.querySelector('.navbar-list');
+			navbarList.classList.toggle('active');
+		}
+	</script>
+	<!-- <script>
+		document.addEventListener('click', function(event) {
+			const isClickInside = document.querySelector('.navbar').contains(event.target);
+			const navbarList = document.querySelector('.navbar-list');
+			if (!isClickInside && navbarList.classList.contains('active')) {
+				navbarList.classList.remove('active');
+				document.querySelector('.navbar-toggler').classList.remove('change');
+			}
+		});
+	</script> -->
     <!-- END nav -->
     <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
