@@ -9141,6 +9141,7 @@ textarea.form-control {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 0;
+    padding-right: 40px;
     color: #000000; }
   .testimony-wrap .position {
     font-size: 14px;
