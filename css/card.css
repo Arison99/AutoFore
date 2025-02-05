@@ -23,7 +23,7 @@
 .home-container .home-content {
   font-size: 4.8rem;
   padding-left: 300px;
-  text-wrap:wrap;
+  text-wrap: wrap;
   width: 100rem;
   font-weight: 910;
   padding-bottom: 30px;
@@ -227,163 +227,117 @@
   position: relative;
 }
 
-.arrow-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  cursor: pointer;
-  color: white; /* Color for the arrow icon */
-}
-
 /* Responsive styles */
-@media (max-width: 1200px) {
-  .home-container .home-content {
-      font-size: 2.8rem;
-  }
-
-  .home-container .home-content-1 {
-      font-size: 1.2rem;
-  }
-
-  .home-container .card-header h2 {
-      font-size: 2.4rem;
-  }
-
-  .home-container .quote {
-      font-size: 1.6rem;
-  }
-
-  .home-container .name {
-      font-size: 1.8rem;
-      margin-left: 0;
-  }
-
-  .home-container .title {
-      font-size: 0.8em;
-      margin-left: 0;
-  }
-
-  .home-container .image-container {
-      bottom: -100px;
-      left: -300px;
-  }
-}
-
-@media (max-width: 992px) {
-  .home-container .home-content {
-      font-size: 2.5rem;
-  }
-
-  .home-container .home-content-1 {
-      font-size: 1.1rem;
-  }
-
-  .home-container .card-header h2 {
-      font-size: 2.2rem;
-  }
-
-  .home-container .quote {
-      font-size: 1.4rem;
-  }
-
-  .home-container .name {
-      font-size: 1.6rem;
-      margin-left: 0;
-  }
-
-  .home-container .title {
-      font-size: 0.75em;
-      margin-left: 0;
-  }
-
-  .home-container .image-container {
-      bottom: -80px;
-      left: -200px;
-  }
-}
-
 @media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
   .home-container .home-content {
-      font-size: 2.2rem;
+    font-size: 2.4rem;
+    padding-left: 0;
+    width: 100%;
   }
 
   .home-container .home-content-1 {
-      font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .home-bmg {
+    max-width: 100%;
+  }
+
+  .home-container .card {
+    width: 100%;
+    margin-left: 0;
   }
 
   .home-container .card-header h2 {
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+
+  .card-body {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .home-container .quote {
-      font-size: 1.2rem;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-  .home-container .name {
-      font-size: 1.4rem;
-      margin-left: 0;
-  }
-
+  .home-container .name,
   .home-container .title {
-      font-size: 0.7em;
-      margin-left: 0;
+    margin-left: 0;
+    text-align: center;
   }
 
   .home-container .image-container {
-      bottom: -60px;
-      left: -150px;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
   }
 
-  .home-container .card-body {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .home-img {
-      margin-right: 0;
-      margin-bottom: 20px;
+  .home-container .play-icon {
+    left: 0;
   }
 }
 
 @media (max-width: 576px) {
+  .home-container {
+    padding: 10px;
+  }
+
   .home-container .home-content {
-      font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .home-container .home-content-1 {
-      font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
   }
 
   .home-container .card-header h2 {
-      font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .home-container .quote {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .home-container .name {
-      font-size: 1.2rem;
-      margin-left: 0;
+    font-size: 1.5rem;
   }
 
   .home-container .title {
-      font-size: 0.6em;
-      margin-left: 0;
+    font-size: 0.8rem;
+  }
+
+  .home-container .home-img {
+    height: 200px;
+    width: 220px;
   }
 
   .home-container .image-container {
-      bottom: -40px;
-      left: -100px;
+    font-size: 1.5rem;
   }
 
-  .home-container .card-body {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .home-img {
-      margin-right: 0;
-      margin-bottom: 20px;
+  .home-container .play-icon {
+    width: 20px;
+    height: 20px;
   }
 }
